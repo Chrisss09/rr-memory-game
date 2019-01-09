@@ -14,3 +14,8 @@ body{
     padding-top: 15px;
 }
 
+@media screen and (max-width:999px) {
+    #main-header {
+        height: 100%;
+    }
+}
