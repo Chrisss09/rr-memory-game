@@ -1,3 +1,9 @@
+body{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c6/Bundesarchiv_Bild_183-71043-0003%2C_Wladimir_Iljitsch_Lenin.jpg");
+    background-repeat: repeat;
+}
+
+
 #main-header {
     height: 100px;
     background-color: black;
@@ -6,4 +12,5 @@
     font-size: 50px;
     text-align: center;
     margin: -8px;
+    padding-top: 15px;
 }
