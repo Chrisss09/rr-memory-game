@@ -14,3 +14,19 @@ body{
     padding-top: 15px;
 }
 
+.row {
+    clear: both;
+}
+
+.row div {
+    padding: 70px;
+    border: 1px solid black;
+    height: 10px;
+    float: left;
+    background-color: gray;
+}
+
+#game-field {
+    margin-left: 27%;
+    margin-top: 25px;
+}
