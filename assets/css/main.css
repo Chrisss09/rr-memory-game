@@ -14,12 +14,13 @@ body{
     padding-top: 15px;
 }
 
-.main-header {
+#main-header {
     color: red;
     font-family: 'Orbitron', sans-serif;
     font-size: 50px;
     padding: 10px;
     text-align: center;
+    text-shadow: 1px 1px 3px;
 }
 
 .row div {
