@@ -3,7 +3,7 @@ body{
     background-repeat: repeat;
 }
 
-#main-header {
+#main-title {
     height: 40px;
     background-color: black;
     color: red;
@@ -14,19 +14,45 @@ body{
     padding-top: 15px;
 }
 
-.row {
-    clear: both;
+.main-header {
+    color: red;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
 }
 
 .row div {
-    padding: 70px;
     border: 1px solid black;
-    height: 10px;
+    height: 150px;
+    width: 150px;
     float: left;
     background-color: gray;
 }
 
-#game-field {
+.row {
+    clear: both;
     margin-left: 27%;
     margin-top: 25px;
 }
+
+/*@media screen and (max-width:310px) {
+    #main-header {
+        height: 60px;
+        padding-top: 1px;
+    }
+}
+
+@media screen and (max-width:829px) {
+    .row div {
+        padding: 50px;
+    }
+}
+
+
+@media screen and (max-width:487px) {
+    .row div {
+        padding: 33px;
+    }
+}*/
+
