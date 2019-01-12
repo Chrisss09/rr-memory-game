@@ -1,7 +1,9 @@
-var gameFaceArray = ['0','0','1','1','2','2','3','3','4','4','5','5'];
+var gameFaceArray = ['Stalin','Stalin','Trotsky','Trotsky','Lenin','Lenin','Marx','Marx','Sverdlov','Sverdlov','Kamenev','Kamenev'];
 var gameValues = [];
 var gameTileIds = [];
 var gameFaceFlipped = 0;
+
+console.log(gameFaceArray);
 
 Array.prototype.gameFaceShuffle = function() {
     var i = this.length, j, temp;
