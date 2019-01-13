@@ -37,8 +37,26 @@ function newGameField() {
     document.getElementById('game-field').innerHTML = output;
 }
 
-/*function flipCard(card, val) {
+function flipCard(card, val) {
     if(card.innerHTML = "" && gameValues.length < 2) {
-        card.style.background = 
+        card.style.background = gameFaceArray; //Could be an error
+        card.innerHTML = val;
+        if(gameValues.length == 0) {
+            gameValues.push(val);
+            gameCardIds.push(card.id);
+        } else if(gameValues.length == 1) {
+            gameValues.push(val);
+            gameCardIds.push(card.id);
+            if(gameValues[0] == gameValues[1]) {
+                gameFaceFlipped += 2;
+                gameValues = [];
+        gameCardIds = [];
+                if(gameFaceFlipped == gameFaceArray.length) {
+                    alert("Board Cleared....Generating new game");
+                    document.getElementById("game-field").innerHTML = "";
+                    newGameField();
+                }
+            }
+        }
     }
-}*/
+}
