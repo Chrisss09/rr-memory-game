@@ -23,19 +23,26 @@ body{
     text-shadow: 1px 1px 3px;
 }
 
-.row div {
-    border: 1px solid black;
-    height: 150px;
-    width: 150px;
-    float: left;
-    background-color: gray;
+#game-field {
+    background:#CCC;
+	border:#999 1px solid;
+	width:550px;
+    height:400px;
+    margin:0px auto;
 }
 
-.row {
-    clear: both;
-    margin-left: 27%;
-    margin-top: 25px;
+#game-field > div {
+    background: url("../images/soviet-logo.jpg") no-repeat;
+	border:#000 1px solid;
+	width:71px;
+	height:67px;
+	float:left;
+	padding:32px;
+	font-size:64px;
+	cursor:pointer;
+    text-align:center;
 }
+
 
 /*@media screen and (max-width:310px) {
     #main-header {

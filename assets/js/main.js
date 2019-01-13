@@ -1,9 +1,7 @@
 var gameFaceArray = ['Stalin','Stalin','Trotsky','Trotsky','Lenin','Lenin','Marx','Marx','Sverdlov','Sverdlov','Kamenev','Kamenev'];
 var gameValues = [];
-var gameTileIds = [];
+var gameCardIds = [];
 var gameFaceFlipped = 0;
-
-console.log(gameFaceArray);
 
 Array.prototype.gameFaceShuffle = function() {
     var i = this.length, j, temp;
@@ -20,7 +18,14 @@ function newGameField() {
     var output = '';
     gameFaceArray.gameFaceShuffle();
     for(var i = 0; i < gameFaceArray.length; i++) {
-        output += '<div id="tile_'+i+'" onclick="flipTile(this,\''+gameFaceArray[i]+'\')"></div>';
+        output += '<div id="card_'+i+'" onclick="flipCard(this,\''+gameFaceArray[i]+'\')"></div>';
     }
+    
     document.getElementById('game-field').innerHTML = output;
 }
+
+/*function flipCard(card, val) {
+    if(card.innerHTML = "" && gameValues.length < 2) {
+        card.style.background = 
+    }
+}*/
