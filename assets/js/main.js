@@ -1,4 +1,17 @@
-var gameFaceArray = ['Stalin','Stalin','Trotsky','Trotsky','Lenin','Lenin','Marx','Marx','Sverdlov','Sverdlov','Kamenev','Kamenev'];
+var gameFaceArray = [
+    "assets/images/0.jpg",
+    "assets/images/0-1.jpg",
+    "assets/images/1.jpg",
+    "assets/images/1-1.jpg",
+    "assets/images/2.jpg",
+    "assets/images/2-2.jpg",
+    "assets/images/3.jpg",
+    "assets/images/3-3.jpg",
+    "assets/images/4.jpg",
+    "assets/images/4-4.jpg",
+    "assets/images/5.jpg",
+    "assets/images/5-5.jpg",
+];
 var gameValues = [];
 var gameCardIds = [];
 var gameFaceFlipped = 0;
