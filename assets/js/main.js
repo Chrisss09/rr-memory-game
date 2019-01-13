@@ -39,7 +39,7 @@ function newGameField() {
 
 function flipCard(card, val) {
     if(card.innerHTML = "" && gameValues.length < 2) {
-        card.style.background = gameFaceArray; //Could be an error
+        card.style.background = gameFaceArray[1]; //Could be an error
         card.innerHTML = val;
         if(gameValues.length == 0) {
             gameValues.push(val);
@@ -50,12 +50,25 @@ function flipCard(card, val) {
             if(gameValues[0] == gameValues[1]) {
                 gameFaceFlipped += 2;
                 gameValues = [];
-        gameCardIds = [];
+                gameCardIds = [];
                 if(gameFaceFlipped == gameFaceArray.length) {
                     alert("Board Cleared....Generating new game");
                     document.getElementById("game-field").innerHTML = "";
                     newGameField();
                 }
+            } else {
+                function flipBackAround() {
+                    var card_1 = document.getElementById(gameCardIds[0]);
+                    var card_2 = document.getElementById(gameCardIds[1]);
+                    card_1.style.background = 'url(assets/images/soviet-logo.jpg) no-repeat';
+                    card_1.innerHTML = "";
+                    card_2.style.background = 'url(assets/images/soviet-logo.jpg) no-repeat';
+                    card_2.innerHTML = "";
+
+                    gameValues = [];
+                    gameCardIds = [];
+                }
+                setTimeout(flipBackAround, 700);
             }
         }
     }
