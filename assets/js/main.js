@@ -33,13 +33,12 @@ function newGameField() {
     for(var i = 0; i < gameFaceArray.length; i++) {
         output += '<div id="card_'+i+'" onclick="flipCard(this,\''+gameFaceArray[i]+'\')"></div>';
     }
-    
     document.getElementById('game-field').innerHTML = output;
 }
 
 function flipCard(card, val) {
     if(card.innerHTML = "" && gameValues.length < 2) {
-        card.style.background = gameFaceArray[1]; //Could be an error
+        card.style.background = gameFaceArray[i]; //Could be an error
         card.innerHTML = val;
         if(gameValues.length == 0) {
             gameValues.push(val);
